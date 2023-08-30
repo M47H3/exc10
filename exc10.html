@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+
+</head>
+
+<body>
+    <h1>Minha Playlist</h1>
+
+    <button class="bnt" onclick="addMusicas()">Adicionar música</button>
+
+    <button class="bnt" onclick="doma()">Ver todas as músicas</button>
+
+    <script>
+        let ma = [];
+        function addMusicas(){
+            let mu = prompt('Adicionar musica');
+            alert('Você adicionou '+ mu +' a sua lista de músicas.');
+            ma.push(mu)
+        }
+        function doma(){
+            if(ma.length === 0 ){
+                alert('Sua playlist está vazia!')
+            }else{
+            alert('Sua playlist é esta: \n '+ ma +'Estas são todas as músicas.');
+            
+        }};
+
+
+    </script>
+
+</body>
+
+</html>
